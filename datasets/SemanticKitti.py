@@ -62,7 +62,8 @@ class SemanticKittiDataset(PointCloudDataset):
         ##########################
 
         # Dataset folder
-        self.path = '../../Data/SemanticKitti'
+        # USTB office
+        self.path = '/media/xuyan/dataset_disk/semantic_kitti/dataset'
 
         # Type of task conducted on this dataset
         self.dataset_task = 'slam_segmentation'
