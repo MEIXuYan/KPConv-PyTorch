@@ -94,9 +94,9 @@ class SemanticKittiDataset(PointCloudDataset):
 
         # Read labels
         if config.n_frames == 1:
-            config_file = join(self.path, 'semantic-kitti.yaml')
+            config_file = 'semantic-kitti.yaml'
         elif config.n_frames > 1:
-            config_file = join(self.path, 'semantic-kitti-all.yaml')
+            config_file = 'semantic-kitti-all.yaml'
         else:
             raise ValueError('number of frames has to be >= 1')
 
