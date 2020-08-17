@@ -224,6 +224,7 @@ if __name__ == '__main__':
 
     # Choose index of checkpoint to start from. If None, uses the latest chkp
     chkp_idx = None
+
     if previous_training_path:
 
         # Find all snapshot in the chosen training folder
@@ -263,7 +264,7 @@ if __name__ == '__main__':
                                             balance_classes=True)
     test_dataset = SemanticKittiDataset(config, set='validation',
                                         balance_classes=False)
-
+    
     # Initialize samplers
     training_sampler = SemanticKittiSampler(training_dataset)
     test_sampler = SemanticKittiSampler(test_dataset)
